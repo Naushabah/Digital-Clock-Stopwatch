@@ -18,3 +18,9 @@ A digital clock and stopwatch built with HTML, CSS, and JavaScript as part of th
 
 ## Author
 Naushabah  
+
+## Intern Details
+- **Name:** Naushabah Shireen
+- **Intern ID:** CITS5082
+- **Company:** CodTech IT Solutions
+- **Domain:** Frontend Development
