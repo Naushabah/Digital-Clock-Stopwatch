@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock & Stopwatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row " >
+        <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-3">
+            <p class=" heading mt-4">CLOCK & STOPWATCH</p>
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('clock')">Clock</button>
+                <button class="tab-btn " onclick="switchTab('sw')">Stopwatch</button>
+            </div>
+
+            <div class="panel active" id="panel-clock">
+                <div class=" card clock-panel">
+                <div class="card-body">
+                    <h5 class="hr-min" id="clock-hm">00:00</h5>
+                    <h6 class="sec" id="clock-s">00</h6>
+                    <p class="ampm" id="clock-ampm">PM/AM</p>
+                    <p class="date" id="clock-date">Loading...</p>
+                </div>
+            </div>
+            </div>
+                
+            <div class="panel" id="panel-sw">
+                <div class="card sw-panel">
+                <div class="card-body">
+                    <h5 class="sw-display" id="sw-hm">00:00</h5>
+                    <h6 class="sw-ms" id="sw-ms">.000</h6>
+                </div>
+            </div>
+            <div class="sw-btns">
+                <button class="btn btn-start" id="btn-start" onclick="swStart()">Start</button>
+                <button class="btn btn-reset" onclick="swReset()">Reset</button>
+            </div>
+            </div>
+            
+
+
+
+                
+
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

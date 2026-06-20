@@ -1,0 +1,186 @@
+body{
+    background-color: #0a0a0f;
+    text-align: center;
+    justify-content: center;
+    color: #6b6880;
+    font-family: "Poppins", sans-serif;
+    
+    /* font-size: 20px; */
+    font-style: normal;
+}
+
+.heading{
+    font-size: 25px;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+}
+
+/*Tabs*/
+.tabs{ 
+    margin: 40px auto;
+    text-align: center;
+    background-color: #13131a;
+    border: 1px solid #1e1e2e;
+    border-radius: 8px;
+    padding: 5px;
+    max-width: fit-content;
+}
+
+.tab-btn{
+    background-color: transparent;
+    color: #6b6880;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 8px 16px;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    border: none;
+}
+
+.tab-btn.active{
+    color: #fff;
+    background-color: #7c6cfc;
+    box-shadow: 0 0 16px rgba(124, 108, 252, 0.25);
+    border: none;
+}
+
+/*Panels*/
+ .panel { 
+    display: none;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+}
+.panel.active { 
+    display: block;
+} 
+
+.card{
+    background-color: #13131a;
+    border: 1px solid #1e1e2e;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    margin: 0 auto;         
+    max-width: 400px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: -40px; left: 50%; transform: translateX(-50%);
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(124, 108, 252, 0.25) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/*--CLOCK PANEL--*/
+
+.clock-panel{
+    height: 270px;
+}
+
+.hr-min{
+    font-size: 80px;
+    color: #e8e6f0;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: clamp(52px, 10vw, 88px);
+    letter-spacing: 0.04em;
+    line-height: 1;
+}
+
+.sec{
+    font-size: 40px;
+    color: #7c6cfc;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: clamp(28px, 5vw, 44px);
+    letter-spacing: 0.06em;
+    
+}
+
+.ampm{
+    font-weight: 600;
+    color: #6b6880;
+    letter-spacing: 0.2em;
+}
+.date{
+    font-weight: 400;
+    color: #6b6880;
+    font-size: 14px;
+}
+
+/*STOPWATCH-PANEL*/
+
+.sw-display{
+    font-size: 80px;
+    color: #e8e6f0;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: clamp(52px, 10vw, 88px);
+    letter-spacing: 0.04em;
+    line-height: 1;
+}
+.sw-ms{
+    color: #fc6c8f;
+    font-size: 40px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: clamp(28px, 5vw, 44px);
+    letter-spacing: 0.06em;
+}
+
+/*Stopwatch buttons*/
+.sw-btns {
+      /* gap: 15px; */
+      margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 32px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: all 0.18s;
+}
+
+.btn-start {
+      background: #7c6cfc;
+      color: #fff;
+      box-shadow: 0 0 16px rgba(124, 108, 252, 0.25);
+}
+
+.btn-start:hover { 
+    filter: brightness(1.15);
+    background: #7c6cfc; 
+    color: #fff;
+}
+ 
+.btn-stop {
+    background: #fc6c8f;
+    color: #fff;
+    box-shadow: 0 0 16px rgba(252, 108, 143, 0.25);
+}
+
+.btn-stop:hover { 
+    filter: brightness(1.15);
+    background: #fc6c8f;
+    color: #fff; 
+}
+
+.btn-reset {
+    background: transparent;
+    color: #6b6880;
+    border: 1px solid #1e1e2e;
+}
+
+.btn-reset:hover { border-color: #6b6880; color:  #e8e6f0; }
+
+@media (max-width: 480px) {
+    .card { padding: 32px 28px; }
+    .btn { padding: 10px 20px; font-size: 12px; }
+}
